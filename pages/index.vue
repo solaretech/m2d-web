@@ -19,6 +19,9 @@ export default {
       todos: []
     }
   },
+  created () {
+    console.log('API_KEY:', process.env.API_KEY)
+  },
   methods: {
     addToDo (title) {
       this.todos.push({
